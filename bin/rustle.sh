@@ -106,7 +106,7 @@ function menu-selection() {
 }
 
 
-
+EDITOR=${EDITOR:-nano}
 init;
 extract-code-from-markdown;
-menu-selection $WORKDIR;
+menu-selection $WORKDIR "$EDITOR"
